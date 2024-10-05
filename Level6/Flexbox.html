@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    #container{
+      height: 600px;
+      width: 600px;
+      border: 2px solid red;
+      padding: 25px;
+      background-color: cadetblue;
+      display: flex;
+      /* align-items: center; */
+      /* flex-wrap: wrap; */
+      /* flex-direction: row; */
+      /* justify-content: center;  */
+      /* align-content: center; */
+    }
+    .box{
+      height: 100px;
+      width: 100px;
+      margin: 2px;
+      border: 2px solid black;
+    }
+    #one{
+      background-color: greenyellow;
+      /* float: right; */
+      order: 2;
+    }
+    #two{
+      background-color: blueviolet;
+      /* align-self: flex-end; */
+      /* flex-shrink: 0; */
+      order: 4;
+    }
+    #tree{
+      background-color: goldenrod;
+      order: 5;
+    }
+    #four{
+      background-color: lightgreen;
+      order: 1;
+    }
+    #five{
+      background-color: mediumpurple;
+      order: 6;
+    }
+    #six{
+      background-color: rgb(236, 206, 206);
+      order: 3;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="one" class="box">Box 1</div>
+    <div id="two" class="box">Box 2</div>
+    <div id="tree" class="box">Box 3</div>
+    <div id="four" class="box">Box 4</div>
+    <div id="five" class="box">Box 5</div>
+    <div id="six" class="box">Box 6</div>
+  </div>
+</body>
+</html>
