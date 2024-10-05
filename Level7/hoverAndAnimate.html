@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+    *{
+      margin: 0px; padding: 0px;
+    }
+    #b1{
+      height: 100px;
+      width: 100px;
+      margin: 2px;
+      padding: 5px;
+      background-color: aqua;
+
+      transition-property: all;
+      transition-duration: 4s;
+      transition-timing-function: steps(3);
+      transition-delay: 1s;
+      /* transition: all 4s ease-in-out 1s; */
+    }
+    #b1:hover{
+      height: 110px;
+      width: 110px;
+      background-color: rgb(32, 146, 108);
+    }
+    #b1:active{
+      background-color: rgb(120, 218, 248);
+    }
+  </style>
+</head>
+<body>
+  <div class="b">
+    <button id="b1"> Click Me </button>
+  </div>
+</body>
+</html>
