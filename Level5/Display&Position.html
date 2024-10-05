@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display and Position </title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .box{
+      width: 70px;
+      height: 70px;
+      background-color: seagreen;
+      margin: 5px;
+    }
+    #div1{
+      position: static;
+    }
+    #div3{
+      position: absolute;
+      top: 20px;
+    }
+    #div4{
+      position: fixed;
+    }
+    #div2{
+      position: relative;
+      top: 10px;
+      left: 50px;
+    }
+    /* .box{
+      height: 250px;
+      width: 250px;
+      background-color: blueviolet;
+      margin: 5px;
+      display: inline-block;
+
+    } */
+    /* #b1{
+      display: none;
+    } */
+     #first{
+      background-color: rgb(207, 28, 28);
+      height: 100px;
+      width: 200px;
+      font-size: 25px;
+     }
+     #second{
+      height: 50%;
+      width: 50%;
+      background-color: blueviolet;
+      /* font-size: 1.1em; */
+     }
+     #view{
+      width: 50vw;
+      height: 50vh;
+      background-color: brown;
+     }
+  </style>
+</head>
+<body>
+  <div id="div1" class="box"> Static </div>
+  <div id="div2" class="box"> Relative </div>
+  <div id="div3" class="box"> Absolute </div>
+  <div id="div4" class="box"> Fixed </div>
+  <!-- <div id="b1" class="box">
+    Box1
+  </div>
+  <div id="b2" class="box">
+    Box2
+  </div>
+  <hr>
+  <div id="first">
+    FIRST
+    <div id="second">
+      SECOND
+    </div>
+  </div>
+  <hr>
+  <div id="view">
+    Viewports
+  </div> -->
+
+</body>
+</html>
